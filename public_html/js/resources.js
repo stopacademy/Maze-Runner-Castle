@@ -4,6 +4,7 @@ game.resources = [
 	 * @example
 	 * {name: "example", type:"image", src: "data/img/example.png"},
 	 */
+        {name: "example", type:"image", src: "data/img/example.png"},
 
 	/* Atlases 
 	 * @example
@@ -15,6 +16,7 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.tmx"},
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
+           {name: "MRC", type: "tmx", src: "data/map/MRC.tmx"}
 
 	/* Background music. 
 	 * @example
