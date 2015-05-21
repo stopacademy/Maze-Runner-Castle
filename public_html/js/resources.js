@@ -7,7 +7,7 @@ game.resources = [
         {name: "background-tiles", type:"image", src: "data/img/background-tiles.png"},
         {name: "meta-tiles", type:"image", src: "data/img/meta-tiles.png"},
         {name: "item-spritesheet", type:"image", src: "data/img/item-spritesheet.png"},
-        //{name: "mario", type:"image", src: "data/img/player1.png"},
+        {name: "A Maze Runner", type:"image", src: "data/img/A Maze Runner.png"},
 
 	/* Atlases 
 	 * @example
