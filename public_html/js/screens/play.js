@@ -8,6 +8,10 @@ game.PlayScreen = me.ScreenObject.extend({
 
         me.levelDirector.loadLevel("MRC");
         
+        
+        var player = me.pool.pull("A Maze Runner", 0, 420, {});
+        me.game.world.addChild(player, 3);
+        
         this.HUD = new game.HUD.Container();
         me.game.world.addChild(this.HUD);
     },
