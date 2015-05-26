@@ -40,7 +40,7 @@ var game = {
 
 	// Run on game resources loaded.
 	"loaded" : function () {
-                me.pool.register("A Maze Runner", game.PlayerEntity, true);
+                me.pool.register("Runner", game.PlayerEntity, true);
             
 		me.state.set(me.state.MENU, new game.TitleScreen());
 		me.state.set(me.state.PLAY, new game.PlayScreen());

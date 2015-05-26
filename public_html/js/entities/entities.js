@@ -2,21 +2,21 @@
 game.PlayerEntity = me.Entity.extend({
    init: function(x, y, settings){
        this._super(me.Entity, 'init', [x, y, {
-              image: "A Maze Runner",
-              spritewidth: "128",
-              spriteheight: "128",
-              width: 128,
-              height: 128,
+              image: "Runner",
+              spritewidth: "794",
+              spriteheight: "1123",
+              width: 64,
+              height: 64,
               getShape: function(){
-                  return (new me.Rect(0, 0, 128, 128)).toPolygon();
+                  return (new me.Rect(0, 0, 64, 64)).toPolygon();
               }
        }]);
        
        this.renderable.addAnimation("idle", [3]);
        //It takes picturse 8, 9, 10, 11, 12, 13 from the image file of mario and plays an 80 second mile display.
-       this.renderable.addAnimation("smallWalk", [8, 9, 10, 11, 12, 13], 80);
+       //this.renderable.addAnimation("smallWalk", [8, 9, 10, 11, 12, 13], 80);
        
-       this.renderable.setCurrentAnimation("idle");
+       //this.renderable.setCurrentAnimation("idle");
        
        this.body.setVelocity(5, 20);
        
@@ -34,25 +34,25 @@ game.PlayerEntity = me.Entity.extend({
         }
         
         this.body.update(delta);
-        me.collision.check(this, true, this.collideHandler.bind(this), true);
+        //me.collision.check(this, true, this.collideHandler.bind(this), true);
         
-        if(this.body.vel.x !== 0){
-            if(!this.renderable.isCurrentAnimation("smallWalk")) {
-                this.renderable.setCurrentAnimation("smallWalk");
-                this.renderable.setAnimationFrame();
+       if(this.body.vel.x !== 0){
+            //if(!this.renderable.isCurrentAnimation("smallWalk")) {
+               // this.renderable.setCurrentAnimation("smallWalk");
+                //this.renderable.setAnimationFrame();
         }
-             this.renderable.setCurrentAnimation("idle");
+             //this.renderable.setCurrentAnimation("idle");
         }
         
         
         
-        this._super(me.Entity, "update", [delta]);
-        return true;
-    },
+        //this._super(me.Entity, "update", [delta]);
+        //return true;
+    //},
     
-    collideHandler: function(response) {
+    //collideHandler: function(response) {
         
-    }
+    //}
     
 });
 

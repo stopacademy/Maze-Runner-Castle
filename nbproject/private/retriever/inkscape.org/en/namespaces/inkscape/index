@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <title>Inkscape Namespace | Inkscape</title>
+    <meta charset="utf-8"/>
+
+    <link rel="shortcut icon" href="https://inkscape.global.ssl.fastly.net/static/images/inkscape-logo.png"/>
+    <link rel="alternate"     type="application/rss+xml" title="News Feed" href="/news/feed/"/>
+    <link rel="stylesheet"    type="text/css" href="https://inkscape.global.ssl.fastly.net/static/css/main.css"/>
+    <link rel="stylesheet"    type="text/css" href="https://inkscape.global.ssl.fastly.net/static/css/text.css"/>
+    <link rel="stylesheet"    type="text/css" href="https://inkscape.global.ssl.fastly.net/static/css/gallery.css"/>
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://inkscape.global.ssl.fastly.net/static/admin/js/jquery.js"></script>
+    <script type="text/javascript" src="https://inkscape.global.ssl.fastly.net/static/js/inkscape.js"></script>
+    <script type="text/javascript" src="https://inkscape.global.ssl.fastly.net/static/js/gallery.js"></script>
+
+    <meta name="Author" content="Inkscape Website Developers" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="inkscape,vector,drawing,graphics,svg,xml,document,poster,linux,open source,foss,floss,free software,libre software,libre,freedom,line,shape,diagram,flowchart,graph,extention,plugin,software,download,platform,windows,win,mac,osx,ubuntu,fedora,debian,help,tutorial,chat,irc,home,homepage,professional,casual,powerful,text,web,www,w3c,standard" />
+  </head>
+
+<body id="page-" class="">
+  
+
+  <div class="header">
+    <div id="cleartop">
+      <div id="logo">
+        <a href="/"><img src="https://inkscape.global.ssl.fastly.net/static/images/inkscape-logo.svg"
+           width="64" height="64" alt="Inkscape" onerror="getPng(this);"/></a>
+        <h1><a href="/" tabindex="-1">Inkscape</a></h1>
+        <h2><a href="/" tabindex="-1">Draw Freely.</a></h2>
+      </div>
+      <div id="header-right">
+        <ul id="topdrops">
+          
+
+<li id="languages">
+  
+    
+    <p>English</p>
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+  <ul class="topdrop">
+    
+      
+      <li class="selected"><a href="/en/namespaces/inkscape/">English</a></li>
+      
+    
+      
+      <li class=""><a href="/de/namespaces/inkscape/">Deutsch</a></li>
+      
+    
+      
+      <li class=""><a href="/fr/namespaces/inkscape/">Français</a></li>
+      
+    
+      
+      <li class=""><a href="/nl/namespaces/inkscape/">Nederlands</a></li>
+      
+    
+      
+      <li class=""><a href="/it/namespaces/inkscape/">italiano</a></li>
+      
+    
+      
+      <li class=""><a href="/es/namespaces/inkscape/">Español</a></li>
+      
+    
+      
+      <li class=""><a href="/pt/namespaces/inkscape/">Português</a></li>
+      
+    
+      
+      <li class=""><a href="/cs/namespaces/inkscape/">česky</a></li>
+      
+    
+      
+      <li class=""><a href="/ru/namespaces/inkscape/">Русский</a></li>
+      
+    
+      
+      <li class=""><a href="/ja/namespaces/inkscape/">日本語</a></li>
+      
+    
+      
+      <li class=""><a href="/zh/namespaces/inkscape/">Chinese</a></li>
+      
+    
+      
+      <li class=""><a href="/zh-tw/namespaces/inkscape/">簡體中文</a></li>
+      
+    
+      
+      <li class=""><a href="/ko/namespaces/inkscape/">한국어</a></li>
+      
+    
+  </ul>
+</li>
+
+
+          
+            <li id="toplogin">
+              <p><a href="/en/user/login/">Log in / Register</a></p>
+              <div class="topdrop">
+                <form action="/en/user/login/" method="POST">
+                  <input type='hidden' name='csrfmiddlewaretoken' value='qJmCmpHlYxhBdjqw2ZZrrxskf7KMQkNp' />
+                  <label for="toplogin-username">Username</label>
+                  <input name="username" id="toplogin-username" type="text" tabindex=1>
+                  <label for="toplogin-password">Password (<a href="/en/user/pwd/">reset</a>)</label>
+                  <input name="password" id="toplogin-password" type="password" tabindex=2>
+                  <input class="button" type="submit" value="Log in" tabindex=3>
+                  <input name="next" type="hidden" value="/en/namespaces/inkscape/"/>
+                </form>
+                <form action="/en/user/register/" method="GET">
+                  <input class="button" type="submit" value="Register" tabindex=4/>
+                </form>
+                <div id="toplogin-alternate">
+                  <span>Or log in using:</span>
+                  <a href="/login/google-oauth2/" id="toplogin-google"></a>
+<a href="/login/facebook/" id="toplogin-facebook"></a>
+<a href="/login/twitter/" id="toplogin-twitter"></a>
+<a href="/login/yahoo/" id="toplogin-yahoo"></a>
+
+                </div>
+              </div>
+            </li>
+          
+        </ul>
+
+        <div id="social">
+          <p>Follow us on: </p>
+          <nav id="socialnav">
+            <a id="twitter-logo" href="https://twitter.com/inkscape"><img src="https://inkscape.global.ssl.fastly.net/static/images/logo_twitter.svg" onerror="getPng(this);" alt="Twitter"/></a>
+            <a id="google-groups-logo" href="https://plus.google.com/+inkscape">G</a>
+          </nav>
+        </div>
+        <form id="topsearch" method="get" action="/en/search/">
+          <input type="text" name="q" id="q" placeholder="Search">
+          <button><img src="https://inkscape.global.ssl.fastly.net/static/images/search.svg" alt="Search"/></button>
+        </form>
+      </div>
+    </div>
+    <div class="nav"><ul id="menu">
+
+
+<li class="child">
+	<a href="/en/about/">About</a>
+	
+	<ul>
+		
+
+
+<li class="child">
+	<a href="/en/about/overview/">Overview</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/about/features/">Features</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/about/screenshots/">Screenshots</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/about/governance/">Governance</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/about/trademark-policy/">Trademark Policy</a>
+	
+</li>
+
+	</ul>
+	
+</li>
+
+<li class="child">
+	<a href="/en/download/">Download</a>
+	
+	<ul>
+		
+
+
+<li class="child">
+	<a href="/en/download/linux/">GNU/Linux</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/download/windows/">Windows installer</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/download/mac-os/">Mac OS X</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/download/addons/">Addons</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/download/source/">Source</a>
+	
+</li>
+
+	</ul>
+	
+</li>
+
+<li class="child">
+	<a href="/en/news/">News</a>
+	
+	<ul>
+		
+
+
+<li class="child">
+	<a href="/en/news/2015/">2015</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/news/2014/">2014</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/news/2013/">2013</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/news/2012/">2012</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/news/2011/">2011</a>
+	
+</li>
+
+	</ul>
+	
+</li>
+
+<li class="child">
+	<a href="/en/community/">Community</a>
+	
+	<ul>
+		
+
+
+<li class="child">
+	<a href="/en/community/discussion/">Chat Now</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/community/mailing-lists/">Mailing Lists</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/community/gallery/">Gallery</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/community/inkscape-around-internet/">Around the Internet</a>
+	
+</li>
+
+<li class="child">
+	<a href="http://planet.inkscape.org/">Blogs</a>
+	
+</li>
+
+	</ul>
+	
+</li>
+
+<li class="child">
+	<a href="/en/learn/">Learn</a>
+	
+	<ul>
+		
+
+
+<li class="child">
+	<a href="/en/learn/tutorials/">Tutorials</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/learn/faq/">FAQ</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/learn/videos/">Video Tutorials</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/learn/books/">Books and Manuals</a>
+	
+</li>
+
+	</ul>
+	
+</li>
+
+<li class="child">
+	<a href="/en/contribute/">Contribute</a>
+	
+	<ul>
+		
+
+
+<li class="child">
+	<a href="/en/contribute/testing/">Testing</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/contribute/report-bugs/">Report Bugs</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/contribute/translations/">Translations</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/contribute/promote/">Promote</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/contribute/contributors/">Contributor Stats</a>
+	
+</li>
+
+	</ul>
+	
+</li>
+
+<li class="child">
+	<a href="/en/develop/">Develop</a>
+	
+	<ul>
+		
+
+
+<li class="child">
+	<a href="/en/develop/next-release/">The Next Release</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/develop/getting-started/">Getting Started</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/develop/about-svg/">About SVG</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/develop/coding-style/">Coding Style</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/develop/bug-management/">Bug Management</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/develop/inkscape-bzr/">Inkscape&#39;s Repositories</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/develop/debugging/">Debugging</a>
+	
+</li>
+
+	</ul>
+	
+</li>
+
+<li class="child">
+	<a href="/en/support-us/">Support Us</a>
+	
+	<ul>
+		
+
+
+<li class="child">
+	<a href="/en/support-us/donate/">Donate</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/support-us/hackfest/">Hackfest 2015</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/support-us/funded-development/">Funded Development</a>
+	
+</li>
+
+<li class="child">
+	<a href="/en/support-us/sponsors/">Sponsors</a>
+	
+</li>
+
+	</ul>
+	
+</li>
+</ul></div>
+  </div>
+
+  
+    <div id="content">
+      <div class="wrapper">
+        
+        
+   <a href="/en/">Home</a> &raquo;  <a href="/en/redirects/">Redirects</a> &raquo; Inkscape Namespace
+
+
+        
+  <h1>Inkscape XML Namespace</h1>
+
+<p>You have found this page because the inkscape svg document contains a URI like string which points here. This identifier is not an actual URL and doesn't contain any definition or other information about the type of information contained in the namespace.</p>
+
+<p><a href="http://wiki.inkscape.org/wiki/index.php/Inkscape_SVG_vs._plain_SVG">Details about What Inkscape&#39;s namespace contains</a></p>
+
+<h2>What is a Namespace Name</h2>
+
+<p><q>The namespace name, to serve its intended purpose, SHOULD have the characteristics of uniqueness and persistence. It is not a goal that it be directly usable for retrieval of a schema (if any exists).</q><br>
+<br>
+<a href="http://www.w3.org/TR/xml-names11/#ns-decl">http://www.w3.org/TR/xml-names11/#ns-decl</a></p>
+
+<p><q>(…) namespace names are just strings, so the fact that the SVG namespace name also looks like a URI isn't important. URIs are commonly used because they are unique, the intention is not to "link" somewhere. (In fact URIs are used so frequently that the term "namespace URI" is commonly used instead of "namespace name".)</q><br>
+<br>
+<a href="https://developer.mozilla.org/en/docs/Web/SVG/Namespaces_Crash_Course">https://developer.mozilla.org/en/docs/Web/SVG/Namespaces_Crash_Course</a></p>
+
+
+      </div>
+    </div>
+  
+
+  
+    <div class="footer">
+      <a href="https://code.launchpad.net/inkscape-web"><img src="https://inkscape.global.ssl.fastly.net/static//images/django.svg" title="This site is running:
+Python 2.7.5
+Django 1.6.5
+InkscapeWeb r653" alt="PY" style="float:right; margin-top: -15px;" onerror="getPng(this);"/></a>
+      <div class="nav">
+        
+        <ul>
+          
+        </ul>
+        
+      </div>
+      <p>
+        
+          Inkscape is Free and Open Source Software licensed under the
+          <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPL</a>.
+        
+      </p>
+    </div>
+
+    <p id="final-footer">Website designed by
+      <a href="http://skymaiden.com">Hinerangi Courtenay</a>
+      in Inkscape and developed by
+      <a href="http://doctormo.org">Martin Owens</a> - 
+      <a href="http://wiki.inkscape.org/wiki/index.php/WebSite">Website development guide</a>
+    </p>
+
+  
+</body>
+</html>
