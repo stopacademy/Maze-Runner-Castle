@@ -12,7 +12,7 @@ game.PlayScreen = me.ScreenObject.extend({
         me.input.bindKey(me.input.KEY.LEFT, "left");
         me.input.bindKey(me.input.KEY.SPACE, "jump");
         
-        var player = me.pool.pull("Runner", 0, 420, {});
+        var player = me.pool.pull("A Maze Runner", 0, 420, {});
         me.game.world.addChild(player, 1);
         
         this.HUD = new game.HUD.Container();
