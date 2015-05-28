@@ -2,42 +2,56 @@
 game.PlayerEntity = me.Entity.extend({
    init: function(x, y, settings){
        this._super(me.Entity, 'init', [x, y, {
-              image: "A Maze Runner",
-              spritewidth: "128",
-              spriteheight: "128",
-              width: 128,
-              height: 128,
+              image: "Runner",
+              spritewidth: "794",
+              spriteheight: "1123",
+              width: 64,
+              height: 64,
               getShape: function(){
-                  return (new me.Rect(0, 0, 128, 128)).toPolygon();
+                  return (new me.Rect(0, 0, 794, 1123)).toPolygon();
               }
        }]);
-        
-       this.body.setVelocity(5, 20);
        
-       me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
+       this.body.setVelocity(5, 0);
+       //me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
        
    },
+    update: function(delta) {
+        
+        
+        if(me.input.isKeyPressed("right")){
+            this.body.vel.x += this.body.accel.x * me.timer.tick;
+            this.flipX(false);
+        }else if(me.input.isKeyPressed("left")){
+            this.body.vel.x -= this.body.accel.x * me.timer.tick;
+            this.flipX(true);
+        }else{
+            this.body.vel.x = 0;
+        }
+        
+        if(me.input.isKeyPressed("up")){
+            if(!this.body.jumping && !this.body.falling){
+                this.body.jumping = true;
+                this.body.vel.y -= this.body.accel.y * me.timer.tick;
+            }
+        }
+        }
     
-        moveRight: function(){
-       //adds to set the position of my adding the velocity defined above in
-           //setVelocity() and multiplying it by me.timer.tick.
-           //me.timer.tick makes the movement look smooth
-           this.body.vel.x += this.body.accel.x * me.timer.tick;
-           this.facing = "right";
-           this.flipX(true);
-   },
-   
-   moveLeft: function(){
-           this.facing = "left";
-           this.body.vel.x -=this.body.accel.x * me.timer.tick;
-           this.flipX(false);
-   },
-   
-   jump: function(){
-       this.body.jumping = true;
-       this.body.vel.y -= this.body.accel.y * me.timer.tick;
-   }
-        
-        
-        
+    
+});
+
+game.LevelTrigger = me.Entity.extend({
+    init: function(x, y, settings){
+        this._super(me.Entity, "init", [x, y, settings]);
+        this.body.onCollision = this.onCollision.bind(this);
+        this.level = settings.level;
+        this.xSpawn = settings.xSpawn;
+        this.ySpawn = settings.ySpawn;
+    },
+    
+    onCollision: function(){
+        this.body.setCollisionMask(me.collision.types.NO_OBJECT);
+        me.levelDirector.loadLevel(this.level);
+        me.state.current().resetPlayer( this.xSpawn, this.ySpawn);
+    }
 });
